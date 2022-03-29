@@ -29,7 +29,16 @@ console.log(sum);
 let set1 = [17, 34, 2, 9, 84];
 let set2 = [18, 92, 4, 56, 3];
 let sum1 = 0;
+let sum2 = 0;
+for ( let i = 0; i < set1.length; i++ ) {
+    sum1 += set1[i];
+}
+for ( let i = 0; i < set2.length; i++ ) {
+    sum2 += set2[i];
+}
 
+let total = sum1 + sum2;
 
+console.log(`${sum1} + ${sum2} = ${total}`);
 // // Example output: 
 // // 276 + 351 = 627
