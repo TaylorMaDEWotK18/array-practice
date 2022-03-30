@@ -42,3 +42,11 @@ let total = sum1 + sum2;
 console.log(`${sum1} + ${sum2} = ${total}`);
 // // Example output: 
 // // 276 + 351 = 627
+
+//#4) Given two arrays of integers. Add up each element in the same position and create a new array containing the sum of each pair. Assume both arrays are of the same length.
+
+const ar1 = [3, 68, 304];
+const ar2 = [32, 5, 38];
+for (let p = 0; p < 3; p++) {
+    
+}
