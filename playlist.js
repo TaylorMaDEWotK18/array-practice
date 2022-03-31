@@ -6,8 +6,8 @@ const songsBaby = [ 'Get Down', 'Beat It', 'Rocket Man', 'Welcome to the Jungle'
 
 function createListItem(arr) {
     let items = '';
-    for ( x = 0; x < arr.length; x++ ) {
-        items = `<li>${arr[x]}</li>`;
+    for ( let x = 0; x < arr.length; x++ ) {
+        items += `<li>${arr[x]}</li>`;
     }
     return items;
 }
