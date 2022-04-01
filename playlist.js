@@ -12,3 +12,11 @@ function createListItem(arr) {
     return items;
 }
 
+//Now we are going to write the code to display it on the page through the loop and interpolation.
+
+document.querySelector('main').innerHTML = `
+    <ol>
+      ${createListItem(songsBaby)}
+    </ol>
+    `;
+    
