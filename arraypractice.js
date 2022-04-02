@@ -55,4 +55,10 @@ for (let p = 0; p < 3; p++) {
 const bestAnime = [ 'Hunter D', 'DBZ', 'Akira', 'Guyver', 'Demon Slayer']
 console.log(bestAnime.join(', '));
 
+//includes method
+
 console.log(bestAnime.includes('Hunter D'));
+
+//indexOf method
+
+console.log(bestAnime.indexOf('DBZ'));
