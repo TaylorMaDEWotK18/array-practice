@@ -16,10 +16,10 @@ const kingBooks = ['Carrie', 'Salems Lot', 'Cujo', 'Pet Semetary', 'The Shining'
 let message;
 let searcch = prompt(`What's your favorite Stephen King book you've read?`);
 
-if (kingBooks.includes(searcch)) {
-    message = `Sick! ${searcch} is AMAZING!! Great choice!`;
+if (kingBooks[1] === searcch) {
+    message = `<h1>Sick! ${searcch} is absolutely AMAZING! Such a sick vampire novel!</h1>`;
 } else {
-    message = `Oh dang! Never read ${searcch}, gonna have to give that one a shot.`;
+    message = `<h1>Oh dang! Never read ${searcch}, gonna have to give that one a shot.</h1>`;
 }
 
 document.querySelector('main').innerHTML = message;
