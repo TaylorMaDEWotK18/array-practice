@@ -1,12 +1,14 @@
-const retroSystems = ['N64', 'NES', 'SNES', 'PlayStation', 'Sega', 'GameBoy', 'Game Gear']
+const retroSystems = ['N64', 'NES', 'SNES', 'PlayStation', 'Sega', 'GameBoy', 'Game Gear', 'Gamecube', 'Dreamcast']
 const search = prompt('What system are you looking for?');
 let message;
 
 // So the goal here is to search whether the system is in stock and have the page display the answer and what we searched for. We'll use the 'includes' method and a conditional statement
+
+// Changing up the original if cond. and a making it an 'if else' cond and a Logical NOT Operator so that if null is entered it wil display specific message
 if ( !search) {
-    message = `Sorry, please enter an actual console.`;
+    message = `Sorry, please enter an actual console. The ones we have in stock are ${retroSystems.join(', ')}`;
 } else if (retroSystems.includes(search)) {
-    message = `Yes! Get ready to game cuz we have the <strong>${search}</strong> in stock! It's row ${retroSystems.indexOf(search)} in the back`;
+    message = `Yes! Get ready to game cuz we have the <strong>${search}</strong> in stock! It's row ${retroSystems.indexOf(search) + 1} in the back`;
 } else {
     message = `No I'm sorry, we're fresh out of ${search}`;
 }
