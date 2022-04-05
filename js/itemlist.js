@@ -7,7 +7,7 @@ let message;
 // Changing up the original if cond. and a making it an 'if else' cond and a Logical NOT Operator so that if null is entered it wil display specific message
 if ( !search) {
     message = `Sorry, please enter an actual console. The ones we have in stock are ${retroSystems.join(', ')}`;
-} else if (retroSystems.includes(search)) {
+} else if (retroSystems.includes(search.toLocaleLowerCase())) {
     message = `Yes! Get ready to game cuz we have the <strong>${search}</strong> in stock! It's row ${retroSystems.indexOf(search) + 1} in the back`;
 } else {
     message = `No I'm sorry, we're fresh out of ${search}`;
