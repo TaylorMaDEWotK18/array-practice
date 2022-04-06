@@ -4,10 +4,16 @@ const games = [
     ['Super Smash', ' Mario 64', 'Shadows of the Empire']
 ]
 
-const snesGames = games[0];
-const segaGames = games[1];
-const n64Games = games[2];
+const systems = [ 'SNES', 'Sega', 'N64']
+
+let message;
+
+// for (let x = 0; x < games.length; x++) {
+//     console.log(games[x]);
+// }
 
 for (let x = 0; x < games.length; x++) {
-    console.log(games[x]);
+    message += `<h2>All the games we have for ${systems[x]} available are ${games[x].join(', ')}!</h2>`;
 }
+
+document.querySelector('main').innerHTML = message;
