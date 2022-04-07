@@ -9,6 +9,17 @@ const retroList = [
 function createRetroList( arr ) {
     games = ``;
     for ( let x = 0; x < arr.length; x++) {
-        games += `<li>${arr[x][0]} was for the ${arr[x][1]} developed in the year ${arr[x][2]}</li>`
+        games += `<li>${arr[x][0]} was for the ${arr[x][1]} developed in the year ${arr[x][2]}</li>`;
     }
+    return games;
 }
+
+const heading = 'Best Retro Games from back in the DAY!';
+
+document.querySelector('h1').innerHTML = heading;
+
+document.querySelector('main').innerHTML = `
+    <ol>
+      ${createRetroList(retroList)}
+    </ol>
+`;
