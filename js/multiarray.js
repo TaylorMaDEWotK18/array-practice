@@ -8,12 +8,12 @@ const systems = [ 'SNES', 'Sega', 'N64']
 
 let message;
 
-// for (let x = 0; x < games.length; x++) {
-//     console.log(games[x]);
-// }
+
 
 for (let x = 0; x < games.length; x++) {
     message += `<h2>All the games we have for ${systems[x]} available are ${games[x].join(', ')}!</h2>`;
 }
+
+
 
 document.querySelector('main').innerHTML = message;
