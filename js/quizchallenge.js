@@ -1,8 +1,14 @@
 // 1. Create a multidimensional array to hold quiz questions and answers
-
+const quizQs = [
+    ['What is you favorite Stephen Book?', 'Salems Lot'],
+    ['What is your favorite short story of his?', 'The Raft'],
+    ['Who is your favorite Resident Evil character of all time?', 'Leon'],
+    ['Who is the love of your life?', 'Stone Cold Fox'],
+    ['What is your favorite verse?', 'Proverbs 3:5-6']
+]
 
 // 2. Store the number of questions answered correctly
-
+let correct = 0;
 
 /* 
   3. Use a loop to cycle through each question
@@ -11,6 +17,9 @@
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
-
+const questions = ``;
+for ( let x = 0; x <= quizQs.length; x++) {
+    questions += prompt(`${quizQs[x][0]}`);
+}
 
 // 4. Display the number of correct answers to the user
