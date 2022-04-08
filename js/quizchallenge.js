@@ -20,6 +20,12 @@ let correct = 0;
 let questions = ``;
 for ( let x = 0; x <= quizQs.length; x++) {
     questions += prompt(`${quizQs[x][0]}`);
+    if (questions === quizQs[x][1]) {
+        correct++;
+    }
 }
 
+let results = `Congrats! You got ${correct} answers right!`
+
 // 4. Display the number of correct answers to the user
+document.querySelector('main').innerHTML = results;
