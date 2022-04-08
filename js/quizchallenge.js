@@ -17,7 +17,7 @@ let correct = 0;
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
-const questions = ``;
+let questions = ``;
 for ( let x = 0; x <= quizQs.length; x++) {
     questions += prompt(`${quizQs[x][0]}`);
 }
