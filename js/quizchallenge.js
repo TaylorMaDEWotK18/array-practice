@@ -17,15 +17,27 @@ let correct = 0;
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
-let questions = ``;
-for ( let x = 0; x <= quizQs.length; x++) {
-    questions += prompt(`${quizQs[x][0]}`);
-    if (questions === quizQs[x][1]) {
+
+//I feel like below (commented out) is a way to do it but they way the video does it is different. I'm curious if there is a way to do it below
+// let questions = ``;
+// for ( let x = 0; x < quizQs.length; x++) {
+//     questions += prompt(`${quizQs[x][0]}`);
+//     if (questions === quizQs[x][1]) {
+//         correct++;
+//     }
+// }
+
+for ( let x = 0; x < quizQs.length; x++) {
+    let questions = quizQs[x][0];
+    let answers = quizQs[x][1];
+    let response = prompt(questions);
+
+    if (answers === response) {
         correct++;
     }
 }
 
-let results = `Congrats! You got ${correct} answers right!`
+let results = `<h1>Congrats! You got ${correct} answers right!</h1>`;
 
 // 4. Display the number of correct answers to the user
 document.querySelector('main').innerHTML = results;
