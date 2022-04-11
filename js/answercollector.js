@@ -1,5 +1,10 @@
 // 1. Create a multidimensional array to hold quiz questions and answers
-
+const quizTime = [
+    ['What grade were you when you first played RE2?','4th'],
+    ['Whats your favorite Dreamcast game?', 'MVC3'],
+    ['What PS5 game first blew your mind?', 'Returnal'],
+    ['What was your favorite Christmas surprise console from Dad?', 'SNES']
+]
 
 // 2. Store the number of questions answered correctly
 
