@@ -7,7 +7,9 @@ const quizTime = [
 ]
 
 // 2. Store the number of questions answered correctly
-
+const correct = [];
+const incorrect = [];
+let correctAnswers = 0;
 
 /* 
   3. Use a loop to cycle through each question
@@ -16,6 +18,15 @@ const quizTime = [
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
+for ( let x = 0; x < quizTime.length; x++) {
+    let questions = quizTime[x][0];
+    let answers = quizTime[x][1];
+    let response = prompt(questions);
+
+    if (response === answers) {
+        correctAnswers++;
+    }
+}
 
 
-// 4. Display the number of correct answers to the user
+// 4. Display which questions were correct and which incorrect
