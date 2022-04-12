@@ -33,6 +33,8 @@ for ( let x = 0; x < quizTime.length; x++) {
 
 let results = correctAnswers;
 
+// 4. Looks like we need to build a function
+
 // 4. Display which questions were correct and which incorrect
 document.querySelector('main').innerHTML = `<h1>Awesome! You got ${results} correct! And here are the questions you got right and got wrong.</h1>
     <h2>Right Q's</h2>
