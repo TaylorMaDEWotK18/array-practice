@@ -25,12 +25,22 @@ for ( let x = 0; x < quizTime.length; x++) {
 
     if (response === answers) {
         correctAnswers++;
+        correct.push(questions);
+    } else {
+        incorrect.push(questions);
     }
 }
 
 let results = correctAnswers;
 
-// 4. Create function to spit back out correct and incorrect questions answered
-
-// 5. Display which questions were correct and which incorrect
-document.querySelector('main').innerHTML = `<h1>Awesome! You got ${results} correct! And here are the questions you got right and got wrong.</h1>`;
+// 4. Display which questions were correct and which incorrect
+document.querySelector('main').innerHTML = `<h1>Awesome! You got ${results} correct! And here are the questions you got right and got wrong.</h1>
+    <h2>Right Q's</h2>
+    <ol>
+        ${correct}
+    </ol>
+    <h2>Wrong Q's</h2>
+    <ol>
+        ${incorrect}
+    </ol>
+`;
