@@ -37,15 +37,19 @@ let results = correctAnswers;
 function createQuestionList( arr ) {
     items = ``;
     for ( let x = 0; x < arr.length; x++) {
-        items = `<li>${correct}</li>`
+        items += `<li>${arr[x]}</li>`
     }
     return items;
 }
 
 // 4. Display which questions were correct and which incorrect
 document.querySelector('main').innerHTML = `<h1>Awesome! You got ${results} correct! And here are the questions you got right and got wrong.</h1>
-    <h2>Right Q's</h2>
+    <h2>Right Q's:</h2>
     <ol>
-        ${correct}
+        ${createQuestionList(correct)}
+    </ol>
+    <h2>Wrong Q's:</h2>
+    <ol>
+        ${createQuestionList(incorrect)}
     </ol>
 `;
